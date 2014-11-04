@@ -13,5 +13,11 @@
   <%= @listing.price %>
 </p>
 
+<p>
+  <strong>Buy it now</strong>
+  <%= link_to "Buy It Now", new_listing_order_path(@listing), class: "btn btn-primary" %>
+</p>
+
+
 <%= link_to 'Edit', edit_listing_path(@listing), class: "btn btn-link" %> |
 <%= link_to 'Back', listings_path, class: "btn btn-link" %>
